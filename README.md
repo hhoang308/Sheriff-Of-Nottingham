@@ -3,7 +3,11 @@ This is source code for server side of the game "Sheriff of Nottingham".
 I prefer you to create an free account in AWS EC2 to host this game. After that, all of your friends can connect to it without your permission.
 
 ## Precondition
-
+### Install dependencies
+```
+sudo apt-get update
+sudo apt-get install build-essential cmake pkg-config
+```
 ### Install ENet
 
 ```
