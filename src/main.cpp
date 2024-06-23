@@ -1,5 +1,6 @@
 #include "Server.h"
 #include "Card.h"
+#include "spdlog/spdlog.h"
 #include <iostream> 
 #include <algorithm>  // for std::shuffle
 #include <random>     // for std::default_random_engine
@@ -42,6 +43,8 @@ std::vector<Card> createAndShuffleDeck() {
 }
 
 int main(int argc, char* argv[]) {
+    spdlog::info("Welcome to spdlog!");
+    spdlog::error("Some error message with arg: {}", 1);
     // Server initialize
     // Server server;
     // if (server.init()) {
