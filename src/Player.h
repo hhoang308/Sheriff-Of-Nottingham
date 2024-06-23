@@ -26,11 +26,11 @@ public:
 
     // Card management
     void addCardToHand(const Card& card);
-    std::vector<Card>& getHand() const;
+    const std::vector<Card>& getHand() const;
     bool removeCardFromHand(const Card& card);
     
     void addCardToGoods(const Card& card);
-    std::vector<Card>& getGoods() const;
+    const std::vector<Card>& getGoods() const;
 
 private:
     std::string name;

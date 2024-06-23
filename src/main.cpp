@@ -1,6 +1,6 @@
 #include "Server.h"
-#include "Logging.h"
 #include "Card.h"
+#include <iostream> 
 #include <algorithm>  // for std::shuffle
 #include <random>     // for std::default_random_engine
 #include <chrono>     // for std::chrono::system_clock
@@ -53,8 +53,7 @@ int main(int argc, char* argv[]) {
 
     // Print the shuffled deck to verify
     for (auto& card : deck) {
-        //std::cout << "Card Name: " << card.getName() << ", Type: " << (card.getType() == CardType::LEGAL ? "Legal" : "Contraband") << "\n";
-        LOG_INFO("Card Name: %s, Type: %s\n", card.getName(), (card.getType() == CardType::LEGAL ? "Legal" : "Contraband"));
+        std::cout << "Card Name: " << card.getName() << ", Type: " << (card.getType() == CardType::LEGAL ? "Legal" : "Contraband") << "\n";
     }
     return 0;
 }

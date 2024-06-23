@@ -44,7 +44,7 @@ bool Player::removeCardFromHand(const Card& card) {
     return false;
 }
 
-std::vector<Card>& Player::getHand() const {
+const std::vector<Card>& Player::getHand() const {
     return hand;
 }
 
@@ -52,6 +52,6 @@ void Player::addCardToGoods(const Card& card) {
     goods.push_back(card);
 }
 
-std::vector<Card>& Player::getGoods() const {
+const std::vector<Card>& Player::getGoods() const {
     return goods;
 }

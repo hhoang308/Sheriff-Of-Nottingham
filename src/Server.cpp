@@ -1,12 +1,10 @@
 #include "Server.h"
-#include "Logging.h"
 #include <iostream>
 #include <enet/enet.h>
 
 bool Server::init() {
     if (enet_initialize() != 0) {
         std::cerr << "An error occurred while initializing ENet.\n";
-        LOG_ERROR()
         return false;
     }
     atexit(enet_deinitialize);
