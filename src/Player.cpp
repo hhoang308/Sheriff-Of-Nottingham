@@ -55,3 +55,11 @@ void Player::addCardToGoods(const Card& card) {
 const std::vector<Card>& Player::getGoods() const {
     return goods;
 }
+
+void Player::setName(std::string& playerName){
+    name = playerName;
+}
+
+void Player::setGold(int playerGold){
+    gold = playerGold;
+}
